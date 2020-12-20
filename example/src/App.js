@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'react-responsive-button'
-import 'react-responsive-button/dist/index.css'
+import { Button } from 'react-responsive-button';
+import 'react-responsive-button/dist/index.css';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return (
+    <>
+      <Button disabled>Disabled Button</Button>
+      <Button>Normal Button</Button>
+    </>
+  );
+};
 
-export default App
+export default App;

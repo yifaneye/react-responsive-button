@@ -1,9 +1,48 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
+button {
+  position: relative;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0;
+  outline: none;
+  padding: 1rem 2rem;
+
+  display: inline-block;
+  appearance: none;
+  background: #000;
+  color: #fff;
   text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+button:hover:not(.disabled) {
+  background: #333;
+
+  cursor: not-allowed;
+}
+
+button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+div.ripple {
+  position: absolute;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  transform: scale(0);
+  animation: ripple-animation 500ms linear;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
