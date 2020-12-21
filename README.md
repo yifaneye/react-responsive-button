@@ -10,6 +10,8 @@ Simple React button component with ripple effect when clicked and tapped
 
 ![react-responsive-button GIF demo without cursor indication](https://yifanai.s3-ap-southeast-2.amazonaws.com/button/buttons-no-cursor.gif)
 
+🚀 [Try react-responsive-button on CodeSandbox](https://codesandbox.io/s/react-responsive-button-nvn2x?file=/src/App.js)
+
 ## Install
 
 ```bash
@@ -41,6 +43,8 @@ const App = () => {
     </div>
   );
 };
+
+export default App;
 ```
 
 ## License
