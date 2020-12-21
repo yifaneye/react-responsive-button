@@ -7,8 +7,10 @@ Simple React button component with ripple effect when clicked and tapped
 ## Demo
 
 ![react-responsive-button GIF demo with cursor indication](https://yifanai.s3-ap-southeast-2.amazonaws.com/button/buttons-with-cursor.gif)
+(Note: the round black circle shown before the ripple is from the GIF app to indicate a click)
 
 ![react-responsive-button GIF demo without cursor indication](https://yifanai.s3-ap-southeast-2.amazonaws.com/button/buttons-no-cursor.gif)
+(Note: this is the component's behavior when clicked, where the cursor set to be hidden from the GIF app)
 
 🚀 [Try react-responsive-button on CodeSandbox](https://codesandbox.io/s/react-responsive-button-nvn2x?file=/src/App.js)
 
