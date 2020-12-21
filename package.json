@@ -1,6 +1,6 @@
 {
   "name": "react-responsive-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple React button component with ripple effect when clicked and tapped",
   "author": "Yifan Ai",
   "license": "MIT",
