@@ -4,6 +4,12 @@ Simple React button component with ripple effect when clicked and tapped
 
 [![NPM](https://img.shields.io/npm/v/react-responsive-button.svg)](https://www.npmjs.com/package/react-responsive-button)
 
+## Demo
+
+![react-responsive-button GIF demo with cursor indication](https://yifanai.s3-ap-southeast-2.amazonaws.com/button/buttons-with-cursor.gif)
+
+![react-responsive-button GIF demo without cursor indication](https://yifanai.s3-ap-southeast-2.amazonaws.com/button/buttons-no-cursor.gif)
+
 ## Install
 
 ```bash
