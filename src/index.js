@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import styles from './styles.module.css';
 
 export const Button = (props) => {
-  const [isShowingRipple, setIsShowingRipple] = useState(false);
-  const [rippleSize, setRippleSize] = useState(0);
-  const [rippleLeft, setRippleLeft] = useState(0);
-  const [rippleTop, setRippleTop] = useState(0);
+  const [ripples, setRipples] = useState([]);
 
   function handleClick(event) {
     // has not effect on disabled button
@@ -14,15 +11,18 @@ export const Button = (props) => {
     }
 
     const button = event.currentTarget;
-    const diameter = Math.max(button.clientWidth, button.clientHeight);
-    setRippleSize(`${diameter}px`);
-    setRippleLeft(`${event.clientX - button.offsetLeft - diameter / 2}px`);
-    setRippleTop(`${event.clientY - button.offsetTop - diameter / 2}px`);
-    setIsShowingRipple(true);
+    const rippleSize = Math.max(button.clientWidth, button.clientHeight);
+    const rippleLeft = event.clientX - button.offsetLeft - rippleSize / 2;
+    const rippleTop = event.clientY - button.offsetTop - rippleSize / 2;
 
-    setTimeout(() => {
-      setIsShowingRipple(false);
-    }, 600);
+    setRipples((oldRipples) => [
+      ...oldRipples,
+      {
+        size: rippleSize,
+        left: rippleLeft,
+        top: rippleTop
+      }
+    ]);
   }
 
   return (
@@ -31,19 +31,18 @@ export const Button = (props) => {
       className={props.disabled ? styles.disabled : ''}
     >
       {props.children}
-      {isShowingRipple ? (
+      {ripples.map((item, index) => (
         <div
           className={styles.ripple}
           style={{
-            width: rippleSize,
-            height: rippleSize,
-            left: rippleLeft,
-            top: rippleTop
+            width: item.size,
+            height: item.size,
+            left: item.left,
+            top: item.top
           }}
+          key={index}
         />
-      ) : (
-        ''
-      )}
+      ))}
     </button>
   );
 };
