@@ -45,4 +45,4 @@ const App = () => {
 
 ## License
 
-MIT © [yifaneye](https://github.com/react-responsive-button)
+MIT © [Yifan Ai](https://github.com/react-responsive-button)
