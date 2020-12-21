@@ -29,6 +29,7 @@ export const Button = (props) => {
     <button
       onClick={handleClick}
       className={props.disabled ? styles.disabled : ''}
+      style={{ ...props.style }}
     >
       {props.children}
       {ripples.map((item, index) => (
