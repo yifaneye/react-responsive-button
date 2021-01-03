@@ -35,9 +35,10 @@ export const Button = (props) => {
     }
 
     const button = event.currentTarget;
-    const rippleSize = Math.max(button.clientWidth, button.clientHeight);
-    const rippleCentreX = event.pageX - button.offsetLeft - button.clientLeft;
-    const rippleCentreY = event.pageY - button.offsetTop - button.clientTop;
+    const buttonRect = button.getBoundingClientRect();
+    const rippleSize = Math.max(buttonRect.width, buttonRect.height);
+    const rippleCentreX = event.clientX - buttonRect.left - button.clientLeft;
+    const rippleCentreY = event.clientY - buttonRect.top - button.clientTop;
     const rippleLeft = rippleCentreX - rippleSize / 2;
     const rippleTop = rippleCentreY - rippleSize / 2;
 
