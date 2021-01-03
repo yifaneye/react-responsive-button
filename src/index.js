@@ -20,6 +20,15 @@ const Ripples = (props) => {
 export const Button = (props) => {
   const [ripples, setRipples] = useState([]);
 
+  const getTargetAttribute = (targetProp) => {
+    const targetAttributeAccepted = ['_blank', '_self', '_parent', '_top'];
+    if (!targetProp) return '_self'; // default value
+    if (targetAttributeAccepted.includes(targetProp)) return targetProp;
+    return '_self'; // default value
+  };
+
+  const targetAttribute = getTargetAttribute(props.target);
+
   const handleClick = (event) => {
     // no ripple effect on a disabled button
     if (props.disabled) {
@@ -39,6 +48,15 @@ export const Button = (props) => {
         top: rippleTop
       }
     ]);
+
+    if (props.href) {
+      window.open(props.href, targetAttribute, 'noopener');
+      /*
+      The 'noopener' feature opens in a new tab on Safari, Chrome, Firefox, Opera and Edge.
+      The 'noreferer' feature opens in a new tab on Safari (with explicit settings),
+          opens in a new window on Chrome, Firefox (ignores explicit settings), Opera and Edge.
+      */
+    }
   };
 
   return (

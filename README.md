@@ -42,6 +42,18 @@ const App = () => {
         Button with shadow
       </Button>
       <Button style={{ border: '1px solid red' }}>Button with border</Button>
+      <Button
+        href='https://www.npmjs.com/package/react-responsive-button'
+        target='_blank'
+      >
+        npm
+      </Button>
+      <Button
+        href='https://github.com/yifaneye/react-responsive-button'
+        target='_blank'
+      >
+        Github
+      </Button>
     </div>
   );
 };
