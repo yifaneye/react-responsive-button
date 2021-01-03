@@ -58,10 +58,14 @@ export const Button = (props) => {
     }
   };
 
+  const buttonClassName = `${styles.button}${
+    props.disabled ? ' ' + styles.disabled : ''
+  }`;
+
   return (
     <button
       onClick={handleClick}
-      className={props.disabled ? styles.disabled : ''}
+      className={buttonClassName}
       style={{ ...props.style }}
     >
       {props.children}

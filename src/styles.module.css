@@ -1,6 +1,6 @@
 /* add css module styles here (optional) */
 
-button {
+.button {
   position: relative;
   border: none;
   border-radius: 0.5rem;
@@ -20,17 +20,17 @@ button {
   user-select: none;
 }
 
-button:hover:not(.disabled) {
+.button:hover:not(.disabled) {
   opacity: 0.9;
 }
 
-button.disabled {
+.button.disabled {
   opacity: 0.5;
 
   cursor: not-allowed;
 }
 
-div.ripple {
+.ripple {
   position: absolute;
   border-radius: 50%;
 
