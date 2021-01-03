@@ -12,7 +12,7 @@ const App = () => {
       <Button style={{ boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.5)' }}>
         Button with shadow
       </Button>
-      <Button style={{ border: '1px solid red' }}>Button with border</Button>
+      <Button style={{ border: '5px solid red' }}>Button with border</Button>
       <Button
         href='https://www.npmjs.com/package/react-responsive-button'
         target='_blank'
