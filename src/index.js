@@ -1,11 +1,27 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
 
+const Ripples = (props) => {
+  const ripples = props.ripples;
+  return ripples.map((item, index) => (
+    <div
+      className={styles.ripple}
+      style={{
+        width: item.size,
+        height: item.size,
+        left: item.left,
+        top: item.top
+      }}
+      key={index}
+    />
+  ));
+};
+
 export const Button = (props) => {
   const [ripples, setRipples] = useState([]);
 
-  function handleClick(event) {
-    // has not effect on disabled button
+  const handleClick = (event) => {
+    // no ripple effect on a disabled button
     if (props.disabled) {
       return;
     }
@@ -23,7 +39,7 @@ export const Button = (props) => {
         top: rippleTop
       }
     ]);
-  }
+  };
 
   return (
     <button
@@ -32,18 +48,7 @@ export const Button = (props) => {
       style={{ ...props.style }}
     >
       {props.children}
-      {ripples.map((item, index) => (
-        <div
-          className={styles.ripple}
-          style={{
-            width: item.size,
-            height: item.size,
-            left: item.left,
-            top: item.top
-          }}
-          key={index}
-        />
-      ))}
+      <Ripples ripples={ripples} />
     </button>
   );
 };
