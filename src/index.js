@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
 
-const Ripples = (props) => {
-  const ripples = props.ripples;
-  return ripples.map((item, index) => (
+const Ripple = (props) => {
+  const { size, left, top } = props.ripple;
+  return (
     <div
       className={styles.ripple}
-      style={{
-        width: item.size,
-        height: item.size,
-        left: item.left,
-        top: item.top
-      }}
-      key={index}
+      style={{ width: size, height: size, left: left, top: top }}
     />
-  ));
+  );
+};
+
+const Ripples = (props) => {
+  const ripples = props.ripples;
+  return ripples.map((ripple, index) => <Ripple ripple={ripple} key={index} />);
 };
 
 export const Button = (props) => {
