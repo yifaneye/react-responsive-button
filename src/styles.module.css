@@ -50,6 +50,18 @@
   background: #eee;
 }
 
+.rectangle {
+  border-radius: 0;
+}
+
+.pill {
+  border-radius: 2147483647px;
+}
+
+.ellipse {
+  border-radius: 50%;
+}
+
 .ripple {
   position: absolute;
   border-radius: 50%;

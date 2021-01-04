@@ -27,6 +27,20 @@ const App = () => {
         </div>
       </section>
       <section>
+        <small>Shaped Buttons (using the 'shape' prop):</small>
+        <div className='buttons-wrapper'>
+          <div className='button-wrapper'>
+            <Button shape='rectangle'>Rectangular Button</Button>
+          </div>
+          <div className='button-wrapper'>
+            <Button shape='pill'>Pill-shaped Button</Button>
+          </div>
+          <div className='button-wrapper'>
+            <Button shape='ellipse'>Elliptical Button</Button>
+          </div>
+        </div>
+      </section>
+      <section>
         <small>Disabled Buttons (using the 'disabled' prop):</small>
         <div className='buttons-wrapper'>
           <div className='button-wrapper'>

@@ -48,11 +48,11 @@ export const Button = (props) => {
     props.disabled ? ' ' + styles.disabled : ''
   }${props.text ? ' ' + styles.text : ''}${
     props.bordered ? ' ' + styles.bordered : ''
-  }`;
+  }${props.shape ? ' ' + styles[props.shape] : ''}`;
 
   const TagName = props.href ? 'a' : 'button';
 
-  const { disabled, text, bordered, ...otherProps } = props;
+  const { disabled, text, bordered, shape, ...otherProps } = props;
 
   return (
     <TagName
@@ -71,6 +71,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   text: PropTypes.bool,
   bordered: PropTypes.bool,
+  shape: PropTypes.oneOf(['rectangle', 'pill', 'ellipse']),
   href: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.oneOfType([
