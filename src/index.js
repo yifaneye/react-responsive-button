@@ -47,22 +47,10 @@ export const Button = (props) => {
     props.disabled ? ' ' + styles.disabled : ''
   }`;
 
-  if (props.href) {
-    return (
-      <a
-        onClick={handleClick}
-        className={buttonClassName}
-        style={{ ...props.style }}
-        {...props}
-      >
-        {props.children}
-        <Ripples ripples={ripples} />
-      </a>
-    );
-  }
+  const TagName = props.href ? 'a' : 'button';
 
   return (
-    <button
+    <TagName
       onClick={handleClick}
       className={buttonClassName}
       style={{ ...props.style }}
@@ -70,6 +58,6 @@ export const Button = (props) => {
     >
       {props.children}
       <Ripples ripples={ripples} />
-    </button>
+    </TagName>
   );
 };
