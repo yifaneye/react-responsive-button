@@ -8,7 +8,11 @@ const App = () => {
   return (
     <div>
       <Button>Default Button</Button>
-      <Button disabled>Disabled Button</Button>
+      <Button disabled>Default Button (disabled)</Button>
+      <Button text>Text Button</Button>
+      <Button text disabled>
+        Text Button (disabled)
+      </Button>
       <Button style={{ background: 'red' }}>Red Button</Button>
       <Button style={{ boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.5)' }}>
         Button with shadow

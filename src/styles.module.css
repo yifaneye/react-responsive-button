@@ -30,6 +30,15 @@
   cursor: not-allowed;
 }
 
+.text {
+  background: #fff;
+  color: #000;
+}
+
+.button.text:hover:not(.disabled) {
+  background: #eee;
+}
+
 .ripple {
   position: absolute;
   border-radius: 50%;

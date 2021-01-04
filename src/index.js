@@ -45,7 +45,7 @@ export const Button = (props) => {
 
   const buttonClassName = `${styles.button}${
     props.disabled ? ' ' + styles.disabled : ''
-  }`;
+  }${props.text ? ' ' + styles.text : ''}`;
 
   const TagName = props.href ? 'a' : 'button';
 
