@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
+import PropTypes from 'prop-types';
 
 const Ripple = (props) => {
   const { size, left, top } = props.ripple;
@@ -64,4 +65,16 @@ export const Button = (props) => {
       <Ripples ripples={ripples} />
     </TagName>
   );
+};
+
+Button.propTypes = {
+  disabled: PropTypes.bool,
+  text: PropTypes.bool,
+  bordered: PropTypes.bool,
+  href: PropTypes.string,
+  style: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 };
