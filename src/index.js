@@ -51,12 +51,14 @@ export const Button = (props) => {
 
   const TagName = props.href ? 'a' : 'button';
 
+  const { disabled, text, bordered, ...otherProps } = props;
+
   return (
     <TagName
       onClick={handleClick}
       className={buttonClassName}
       style={{ ...props.style }}
-      {...props}
+      {...otherProps}
     >
       {props.children}
       <Ripples ripples={ripples} />
