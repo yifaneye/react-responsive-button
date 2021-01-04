@@ -37,7 +37,22 @@ const App = () => {
   return (
     <div>
       <Button>Default Button</Button>
-      <Button disabled>Disabled Button</Button>
+      <Button text>Text Button</Button>
+      <Button bordered>Bordered Button</Button>
+      <Button shape='rectangle'>Rectangular Button</Button>
+      <Button shape='pill'>Pill-shaped Button</Button>
+      <Button shape='ellipse'>Elliptical Button</Button>
+      <Button disabled>Default Button (disabled)</Button>
+      <Button href='#hi'>Button-liked Anchor</Button>
+      <Button href='https://www.npmjs.com/package/react-responsive-button'>
+        Button-liked Anchor
+      </Button>
+      <Button
+        href='https://www.npmjs.com/package/react-responsive-button'
+        target='_blank'
+      >
+        Button-liked Anchor
+      </Button>
       <Button style={{ background: 'red' }}>Red Button</Button>
       <Button style={{ boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.5)' }}>
         Button with shadow
@@ -50,19 +65,6 @@ const App = () => {
       </Button>
       <Button>
         <img src={reactLogo} alt='React' />
-      </Button>
-      <Button href='#hi'>#hi</Button>
-      <Button
-        href='https://www.npmjs.com/package/react-responsive-button'
-        target='_blank'
-      >
-        npm
-      </Button>
-      <Button
-        href='https://github.com/yifaneye/react-responsive-button'
-        target='_blank'
-      >
-        Github
       </Button>
     </div>
   );
