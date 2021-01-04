@@ -1,0 +1,13 @@
+/* add css module styles here (optional) */
+
+.rectangle {
+  border-radius: 0;
+}
+
+.pill {
+  border-radius: 2147483647px;
+}
+
+.ellipse {
+  border-radius: 50%;
+}

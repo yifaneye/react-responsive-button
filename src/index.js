@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
+import shapesStyles from './shapes.module.css';
 import PropTypes from 'prop-types';
 
 const Ripple = (props) => {
@@ -48,7 +49,7 @@ export const Button = (props) => {
     props.disabled ? ' ' + styles.disabled : ''
   }${props.text ? ' ' + styles.text : ''}${
     props.bordered ? ' ' + styles.bordered : ''
-  }${props.shape ? ' ' + styles[props.shape] : ''}`;
+  }${props.shape ? ' ' + shapesStyles[props.shape] : ''}`;
 
   const TagName = props.href ? 'a' : 'button';
 
