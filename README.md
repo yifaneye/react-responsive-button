@@ -6,6 +6,9 @@ Simple, lightweight, dependency-free React button component with ripple effect w
 
 ## Demo
 
+![react-responsive-button default, styled and customized buttons](https://yifanai.s3-ap-southeast-2.amazonaws.com/button/rrb.jpg) \
+Try react-responsive-button 🚀 on [CodeSandbox](https://codesandbox.io/s/react-responsive-button-nvn2x?file=/src/App.js)
+
 ![react-responsive-button GIF demo with cursor indication](https://yifanai.s3-ap-southeast-2.amazonaws.com/button/buttons-with-cursor.gif) \
 Note: the round black circle shown before the ripple is from GIPHY CAPTURE (the GIF app) to indicate a click.
 
