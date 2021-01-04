@@ -5,7 +5,7 @@
 }
 
 .pill {
-  border-radius: 2147483647px;
+  border-radius: 2147483647px; /* int max */
 }
 
 .ellipse {
