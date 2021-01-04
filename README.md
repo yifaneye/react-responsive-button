@@ -31,6 +31,7 @@ import React from 'react';
 
 import { Button } from 'react-responsive-button';
 import 'react-responsive-button/dist/index.css';
+import reactLogo from './assets/favicon.ico';
 
 const App = () => {
   return (
@@ -41,7 +42,16 @@ const App = () => {
       <Button style={{ boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.5)' }}>
         Button with shadow
       </Button>
-      <Button style={{ border: '1px solid red' }}>Button with border</Button>
+      <Button style={{ border: '5px solid red' }}>Button with border</Button>
+      <Button>
+        <span role='img' aria-label='Heart'>
+          ❤️
+        </span>
+      </Button>
+      <Button>
+        <img src={reactLogo} alt='React' />
+      </Button>
+      <Button href='#hi'>#hi</Button>
       <Button
         href='https://www.npmjs.com/package/react-responsive-button'
         target='_blank'

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Button } from 'react-responsive-button';
 import 'react-responsive-button/dist/index.css';
+import reactLogo from './assets/favicon.ico';
 
 const App = () => {
   return (
@@ -13,6 +14,15 @@ const App = () => {
         Button with shadow
       </Button>
       <Button style={{ border: '5px solid red' }}>Button with border</Button>
+      <Button>
+        <span role='img' aria-label='Heart'>
+          ❤️
+        </span>
+      </Button>
+      <Button>
+        <img src={reactLogo} alt='React' />
+      </Button>
+      <Button href='#hi'>#hi</Button>
       <Button
         href='https://www.npmjs.com/package/react-responsive-button'
         target='_blank'
