@@ -73,6 +73,23 @@ const App = () => {
 export default App;
 ```
 
+Try react-responsive-button 🚀 on [CodeSandbox](https://codesandbox.io/s/react-responsive-button-nvn2x?file=/src/App.js)
+
+## Props
+
+To customize the default button with black background, white text, no border and rounded corners (with border-radius of 0.5rem), use the following props:
+
+|Name             |Type                  |Default|Description|
+|:----------------|:---------------------|:------|:----------|
+|text             |Boolean               |false  |If true, the button will have white background and black text.|
+|bordered         |Boolean               |false  |If true, the button will have white background, black text and 1px solid black border.|
+|disabled         |Boolean               |false  |If true, the button will have faded background and faded text, and will not allowed to be clicked.|
+|shape            |String                |null   |Shape of the button that is any of 'rectangle' or 'pill' or 'ellipse'.|
+|href             |String                |null   |If specified, the button will be an anchor element, whilst still look like a button.|
+|style            |Object                |null   |Inline style(s) to be placed on the button element.|
+|children         |node or Array of nodes|null   |DOM node(s) inside the button.|
+|(any other props)|Any                   |null   |Any number of additional attribute(s) to be placed on the button element, e.g. target='_blank', aria-label='Open Modal'.|
+
 ## License
 
 MIT © [Yifan Ai](https://github.com/yifaneye/react-responsive-button)
