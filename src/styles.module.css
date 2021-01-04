@@ -39,6 +39,17 @@
   background: #eee;
 }
 
+.bordered {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: calc(0.5rem - 1px);
+}
+
+.button.bordered:hover:not(.disabled) {
+  background: #eee;
+}
+
 .ripple {
   position: absolute;
   border-radius: 50%;
