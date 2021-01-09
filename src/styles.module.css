@@ -12,6 +12,7 @@
   appearance: none;
   background: #000;
   color: #fff;
+  opacity: 1;
   text-align: center;
   text-decoration: none;
   overflow: hidden;
@@ -22,6 +23,12 @@
 
 .button:hover:not(.disabled) {
   opacity: 0.85;
+}
+
+@media (hover: none) {
+  .button:hover:not(.disabled) {
+    opacity: 1;
+  }
 }
 
 .button.disabled {
