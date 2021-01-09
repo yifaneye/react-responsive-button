@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import styles from './styles.module.css';
 import shapesStyles from './shapes.module.css';
 import PropTypes from 'prop-types';
 
-const Ripple = (props) => {
-  const { size, left, top } = props.ripple;
-  return (
-    <div
-      className={styles.ripple}
-      style={{ width: size, height: size, left: left, top: top }}
-    />
-  );
-};
+const Ripple = memo(
+  (props) => {
+    const { size, left, top } = props.ripple;
+    return (
+      <div
+        className={styles.ripple}
+        style={{ width: size, height: size, left: left, top: top }}
+      />
+    );
+  },
+  () => true
+);
 
 const Ripples = (props) => {
   const ripples = props.ripples;
