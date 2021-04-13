@@ -19,6 +19,12 @@ code {
   margin: 0 auto;
 }
 
+.heading-wrapper {
+  text-align: center;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .buttons-wrapper {
   display: flex;
   justify-content: flex-start;
