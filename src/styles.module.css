@@ -1,5 +1,3 @@
-/* add css module styles here (optional) */
-
 .button {
   position: relative;
   border: none;
@@ -46,6 +44,12 @@
   background: #eee;
 }
 
+@media (hover: none) {
+  .button.text:hover:not(.disabled) {
+    background: #fff;
+  }
+}
+
 .bordered {
   background: #fff;
   color: #000;
@@ -55,6 +59,12 @@
 
 .button.bordered:hover:not(.disabled) {
   background: #eee;
+}
+
+@media (hover: none) {
+  .button.bordered:hover:not(.disabled) {
+    background: #fff;
+  }
 }
 
 .ripple {
