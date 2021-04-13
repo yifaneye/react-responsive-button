@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5979d461.chunk.css",
+    "main.js": "./static/js/main.8c883c2a.chunk.js",
+    "main.js.map": "./static/js/main.8c883c2a.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.64ed8db7.js",
+    "runtime-main.js.map": "./static/js/runtime-main.64ed8db7.js.map",
+    "static/js/2.f7586a0f.chunk.js": "./static/js/2.f7586a0f.chunk.js",
+    "static/js/2.f7586a0f.chunk.js.map": "./static/js/2.f7586a0f.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.815838b482e8ad0f4fdc161058f52307.js": "./precache-manifest.815838b482e8ad0f4fdc161058f52307.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.5979d461.chunk.css.map": "./static/css/main.5979d461.chunk.css.map",
+    "static/js/2.f7586a0f.chunk.js.LICENSE.txt": "./static/js/2.f7586a0f.chunk.js.LICENSE.txt",
+    "static/js/main.8c883c2a.chunk.js.LICENSE.txt": "./static/js/main.8c883c2a.chunk.js.LICENSE.txt",
+    "static/media/favicon.ico": "./static/media/favicon.c92b85a5.ico"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64ed8db7.js",
+    "static/js/2.f7586a0f.chunk.js",
+    "static/css/main.5979d461.chunk.css",
+    "static/js/main.8c883c2a.chunk.js"
+  ]
+}
